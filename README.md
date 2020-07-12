@@ -2,7 +2,7 @@
 
 <h3>Pre-requisites</h3>
   
-1. Install terraform and connfigure appropriate binary path following the below link.</br>
+1. Install terraform and configure appropriate binary path following the below link.</br>
 
       <a href="https://www.terraform.io/downloads.html"> https://www.terraform.io/downloads.html</a></br>
 
@@ -37,7 +37,7 @@
     Required variables can be declared in <b>vars.tfvars</b> file.</br></br>
 
 4. Declaring Data block</br>
-    Data Block defination can be referred and modified in <b>data_source.tf</b>.</br></br>
+    Data Block definition can be referred and modified in <b>data_source.tf</b>.</br></br>
 
 5. Creating Key-Pair Resource</br>
     Created ssh key-pair can be imported in <b>key_pair.tf</b> file.</br></br>
