@@ -10,20 +10,20 @@
     Follow the below steps to create aws default profile</br>
 
         $ aws configure
-        AWS Access Key ID [None]: <b>{Access Key}</b>
-        AWS Secret Access Key [None]: <b>{Secret Access Key}</b>
-        Default region name [None]: <b>{Leave as blank}</b>
-        Default output format [None]: <b>{Leave as blank as default it JSON}</b>
+        AWS Access Key ID [None]: {Access Key}
+        AWS Secret Access Key [None]: {Secret Access Key}
+        Default region name [None]: {Leave as blank}
+        Default output format [None]: {Leave as blank as default it JSON}
 
 3. Creating Key-Pair</br>
     Follow the below instructions to create keypair which will be imported as a aws key-pair part of terraform deployment</br>
 
         $ ssh-keygen
         Generating public/private rsa key pair.
-        Enter file in which to save the key (/c/Users/vaa100/.ssh/id_rsa): <b>./test-key</b>
-        Enter passphrase (empty for no passphrase): <b>{Leave as blank}</b>
-        Enter same passphrase again: <b>{Leave as blank}</b>
-        <b>{Enter until you get the promp}</b>
+        Enter file in which to save the key (/c/Users/vaa100/.ssh/id_rsa): ./test-key
+        Enter passphrase (empty for no passphrase): {Leave as blank}
+        Enter same passphrase again: {Leave as blank}
+        {Enter until you get the promp}
 
 <h3>Terraform Templating</h3>
   
