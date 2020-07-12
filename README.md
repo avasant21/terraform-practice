@@ -23,7 +23,7 @@
         Enter file in which to save the key (/c/Users/vaa100/.ssh/id_rsa): ./test-key
         Enter passphrase (empty for no passphrase): {Leave as blank}
         Enter same passphrase again: {Leave as blank}
-        {Enter until you get the promp}
+        {Enter until you get the prompt}
 
 <h3>Terraform Templating</h3>
   
