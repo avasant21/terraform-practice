@@ -13,7 +13,7 @@
         AWS Access Key ID [None]: {Access Key}
         AWS Secret Access Key [None]: {Secret Access Key}
         Default region name [None]: {Leave as blank}
-        Default output format [None]: {Leave as blank as default it JSON}
+        Default output format [None]: {Leave as blank as default is JSON}
 
 3. Creating Key-Pair</br>
     Follow the below instructions to create keypair which will be imported as a aws key-pair part of terraform deployment</br>
