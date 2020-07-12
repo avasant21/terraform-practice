@@ -2,11 +2,12 @@
 
 <h3>Pre-requisites</h3>
   
-1. Install terraform and configure appropriate binary path following the below link.</br>
+1. <b>Terraform Installation:</b></br>
+    Install terraform and configure appropriate binary path following the below link.</br>
 
       <a href="https://www.terraform.io/downloads.html"> https://www.terraform.io/downloads.html</a></br>
 
-2. Configuring AWS Profile</br>
+2. <b>Configuring AWS Profile:</b></br>
     Follow the below steps to create aws default profile. The user must have the required permissions to create resources.</br>
 
         $ aws configure
@@ -15,7 +16,7 @@
         Default region name [None]: {Leave as blank}
         Default output format [None]: {Leave as blank as default is JSON}
 
-3. Creating Key-Pair</br>
+3. <b>Creating Key-Pair:</b></br>
     Follow the below instructions to create keypair which will be imported as a aws key-pair part of terraform deployment.</br>
 
         $ ssh-keygen
