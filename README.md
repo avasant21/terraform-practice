@@ -75,7 +75,7 @@
         $ terraform plan -var-file="vars.tfvars"
 
 4. Terraform Deployment</br>
-    Deploy the stack using the below apply command.</br>
+    Deploy the stack using the below apply command. Confirmation to be provided when prompted</br>
 
         $ terraform apply -var-file="vars.tfvars"
 
@@ -90,6 +90,6 @@
         $ terraform output
 
 7. Terraform Destroy Operations</br>
-    The created resources can be fully deleted using the below destroy option.</br>
+    The created resources can be fully deleted using the below destroy option. Confirmation to be provided when prompted</br>
 
         $ terraform destroy
