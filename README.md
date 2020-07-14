@@ -74,11 +74,19 @@
     Execute and verify the terraform templates without actually applying/creating the resources using plan as below.</br>
 
         $ terraform plan -var-file="vars.tfvars"
+        
+      To Create with different commandline arguemnts as variables
+        
+        $ terraform.exe plan -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["157.50.26.65/32"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
 
 4. Terraform Deployment</br>
     Deploy the stack using the below apply command. Confirmation to be provided when prompted</br>
 
         $ terraform apply -var-file="vars.tfvars"
+        
+      To Create with different commandline arguemnts as variables
+        
+        $ terraform.exe apply -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["157.50.26.65/32"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
 
 5. Terraform State Operations</br>
     Verify the created resources using state option as below. This will read and show the information from "*.tfstate" file created part of apply execution.</br>
