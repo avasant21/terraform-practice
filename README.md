@@ -21,7 +21,7 @@
 
         $ ssh-keygen
         Generating public/private rsa key pair.
-        Enter file in which to save the key (/c/Users/vaa100/.ssh/id_rsa): ./test-key
+        Enter file in which to save the key (/c/Users/vaa100/.ssh/id_rsa): ./test-key.pem
         Enter passphrase (empty for no passphrase): {Leave as blank}
         Enter same passphrase again: {Leave as blank}
         {Enter until you get the prompt}
@@ -77,7 +77,7 @@
         
       To Create with different commandline arguemnts as variables
         
-        $ terraform plan -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["157.50.26.65/32"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
+        $ terraform plan -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["{your public ip}"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
 
 4. Terraform Deployment</br>
     Deploy the stack using the below apply command. Confirmation to be provided when prompted</br>
@@ -86,7 +86,7 @@
         
       To Create with different commandline arguemnts as variables
         
-        $ terraform apply -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["157.50.26.65/32"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
+        $ terraform apply -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["{your public ip}"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
 
 5. Terraform State Operations</br>
     Verify the created resources using state option as below. This will read and show the information from "*.tfstate" file created part of apply execution.</br>

@@ -20,14 +20,6 @@ function funSetHostname() {
 	funFuntionNotify "$${FUNCNAME[0]}: Completed"
 }
 
-function funSystemUpdate() {
-	funFuntionNotify "$${FUNCNAME[0]}: Started"
-	# Performing system patching to the letest updates
-	echo "Performing system patching to the letest updates"
-	yum update -y
-	funFuntionNotify "$${FUNCNAME[0]}: Completed"
-}
-
 function funUserCreation() {
 	funFuntionNotify "$${FUNCNAME[0]}: Started"
 	# Creating Centos user in the instance
@@ -41,9 +33,17 @@ function funUserCreation() {
 	funFuntionNotify "$${FUNCNAME[0]}: Completed"
 }
 
+function funSystemUpdate() {
+	funFuntionNotify "$${FUNCNAME[0]}: Started"
+	# Performing system patching to the letest updates
+	echo "Performing system patching to the letest updates"
+	yum update -y
+	funFuntionNotify "$${FUNCNAME[0]}: Completed"
+}
+
 # Calling functions
 echo "Functions Execution - Started"
 funSetHostname
-funSystemUpdate
 funUserCreation
+funSystemUpdate
 echo "Functions Execution - Completed"
