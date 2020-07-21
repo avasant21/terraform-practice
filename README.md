@@ -1,6 +1,6 @@
-<h2><u>Instruction - Terraform Deployment</u></h2>
+# Instruction - Terraform Deployment
 
-<h3>Pre-requisites</h3>
+### Pre-requisites
   
 1. <b>Terraform Installation:</b></br>
     Install terraform and configure appropriate binary path following the below link.</br>
@@ -26,7 +26,7 @@
         Enter same passphrase again: {Leave as blank}
         {Enter until you get the prompt}
 
-<h3>Terraform Templating</h3>
+### Terraform Templating
   
 1. Provider Definition</br>
     Providers has been defined in <b>provider.tf</b> file.</br></br>
@@ -58,7 +58,7 @@
 10. Defining Outputs</br>
     The Output is defined in <b>output.tf</b> file in respective modules.</br>
 
-<h3>Stack Deployment</h3>
+### Stack Deployment
 
 1. Terraform Initiation</br>
     Execute below command to initializing modules and installing required provider plugins.</br>
