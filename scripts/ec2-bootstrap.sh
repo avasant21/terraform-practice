@@ -45,5 +45,5 @@ function funSystemUpdate() {
 echo "Functions Execution - Started"
 funSetHostname
 funUserCreation
-funSystemUpdate
+#funSystemUpdate
 echo "Functions Execution - Completed"
