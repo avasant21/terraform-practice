@@ -86,7 +86,7 @@
         
       To Create with different commandline arguemnts as variables
         
-        $ terraform apply -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["{your public ip}"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
+        $ terraform apply -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["{your public ip}/32"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
 
 5. Terraform State Operations</br>
     Verify the created resources using state option as below. This will read and show the information from "*.tfstate" file created part of apply execution.</br>
