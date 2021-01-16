@@ -77,7 +77,7 @@
         
       To Create with different commandline arguemnts as variables
         
-        $ terraform plan -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["{your public ip}"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
+        $ terraform plan -var-file='vars.tfvars' -var='INSTANCE_COUNT=3' -var='SOURCE_CIDR=["{your public ip}/32"]' -var='INSTANCE_TYPE=["t2.medium","t2.micro","t2.micro"]'
 
 4. Terraform Deployment</br>
     Deploy the stack using the below apply command. Confirmation to be provided when prompted</br>
@@ -101,4 +101,4 @@
 7. Terraform Destroy Operations</br>
     The created resources can be fully deleted using the below destroy option. Confirmation to be provided when prompted</br>
 
-        $ terraform destroy
+        $ terraform destroy -var-file="vars.tfvars"
